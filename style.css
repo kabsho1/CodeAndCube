@@ -1,8 +1,8 @@
 * {
-  	margin: 0;
-  	padding: 0;
-  	box-sizing: border-box;
-  	font-family: exo
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: exo
 }
 
 h1 {
@@ -19,8 +19,8 @@ h2 {
 
 p {
 	margin: 10px;
-  	color: blue;
-  	/*text-align: center;*/
+  color: blue;
+  /*text-align: center;*/
 }
 
 ul {
@@ -33,23 +33,23 @@ ul {
 	top: 0;
 }
 
-li {
+ul li {
 	float: left;
 }
 
-li a {
+ul li a {
 	display: block;
-  	padding: 14px 16px;
-  	color: white;
-  	text-decoration: none;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
 }
 
-li a:hover {
-  	background-color: red;
+ul li a:hover {
+  background-color: red;
   
 }
 
-li a.active {
+ul li a.active {
   background-color: #222;
   color: white;
 }
@@ -68,22 +68,22 @@ p.italic {
 
 
 div {
-	//max-width: 200px;
-  	height: 50px;
-  	border: 2px solid red;
-  	margin: auto;
+//max-width: 200px;
+  height: 50px;
+  border: 2px solid red;
+  margin: auto;
 }
 
 
 /*FONTS*/
 @font-face {
-   font-family: exo;
-   src: url(fonts/Exo-VariableFont_wght.ttf);
-   font-style: normal;
+  font-family: exo;
+  src: url(fonts/Exo-VariableFont_wght.ttf);
+  font-style: normal;
 }
 
 font-face {
-   font-family: exo;
-   src: url(fonts/Exo-VariableFont_wght.ttf);
-   font-style: italic;
+  font-family: exo;
+  src: url(fonts/Exo-VariableFont_wght.ttf);
+  font-style: italic;
 }
