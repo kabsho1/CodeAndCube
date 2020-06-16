@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-	margin: 10px;
+  margin: 10px;
   color: blue;
   /*text-align: center;*/
 }
@@ -54,6 +54,10 @@ ul li a.active {
   color: white;
 }
 
+ol {
+  margin-left: 30px;
+}
+
 p.large {
   font-size: 200%;
 }
@@ -73,6 +77,55 @@ div {
   border: 2px solid red;
   margin: auto;
 }
+
+
+
+.button {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid black;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.button-rounded {
+  border-radius: 20px;
+}
+
+.button-shadow:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn-group .button {
+  background-color: black;
+  color: white;
+  border: none;
+  float: left;
+  cursor: pointer;
+}
+
+.btn-group .button:hover {
+  background-color: red;
+  color: black;
+  border: none;
+  float: left;
+}
+
+.btn-group .button.active {
+  background-color: #F00;
+  color: white;
+  cursor: default;
+}
+
 
 
 /*FONTS*/

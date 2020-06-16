@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <title>Code and Cube Home Page</title>
-  <link href="style.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Code and Cube Home Page</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
 
-<body>
-  <h1 style="text-align: center;">CODE AND CUBE</h1>
-  <h2 style="text-align: center;">JAVA AND RUBIK'S CUBE CLASSES</h2>
+  <body>
+    <h1 style="text-align: center;">CODE AND CUBE</h1>
+    <h2 style="text-align: center;">JAVA AND RUBIK'S CUBE CLASSES</h2>
 
-  
-  <ul>
-    <li><a class="active" href="https://codeandcube.com/">Home</a></li>
-    <li><a href="https://codeandcube.com/test">Test Page</a></li>
-    <li><a>just some text</a></li>
-    <li style="float:right;"><a>a logo or something</a></li>
-  </ul>
+    
+    <!-- <ul>
+      <li><a class="active" href="https://codeandcube.com/">Home</a></li>
+      <li><a href="https://codeandcube.com/test">Test Page</a></li>
+      <li><a>just some text</a></li>
+      <li style="float:right;"><a>a logo or something</a></li>
+    </ul> -->
 
-  
+    <div class="btn-group">
+      <button class="button active" disabled>Home</button>
+      <button class="button" onclick="myFunction()">Test Page</button>
+      <button class="button">Button</button>
+      <button class="button">Button</button>
+      <button class="button" style="float:right;">a logo or something</button>
+    </div>
 
-  <div style="height:1500px;">
-    a box that can scroll down
-  </div>
+    <p><br>Remember to clear floats after, or else will this p element also float next to the buttons.</p>
 
 
-</body>
+    <div style="height:1500px;">
+      a box that can scroll down
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
