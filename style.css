@@ -5,11 +5,17 @@
   font-family: exo
 }
 
+body {
+  background-color: #0d2636;
+  color: white;
+}
+
 h1 {
-	margin: 10px;
-	margin-left: 20px;
-	/*font-family: "Georgia", serif;*/
-  font-weight: 600;
+  margin: 10px;
+  margin-left: 20px;
+  /*font-family: "Georgia", serif;*/
+  font-weight: lighter;
+  font-variation-settings: 'wght' 10;
   font-size: 300%;
 }
 
@@ -19,39 +25,43 @@ h2 {
 
 p {
   margin: 10px;
-  color: blue;
+  /* color: white; */
   /*text-align: center;*/
 }
 
-ul {
-	list-style-type: none;
+a {
+  color: white;
+}
+
+ul.head {
+  list-style-type: none;
   overflow: hidden;
-  background-color: #555;
+  background-color: hsl(203, 61%, 20%);
   width: 100%;
   position: -webkit-sticky;
-	position: sticky;  	
-	top: 0;
+  position: sticky;
+  top: 0;
+  padding-left: 10%;
 }
 
-ul li {
-	float: left;
+ul.head li {
+  float: left;
 }
 
-ul li a {
-	display: block;
-  padding: 14px 16px;
+ul.head li a {
+  display: block;
+  padding: 30px 20px;
   color: white;
   text-decoration: none;
   transition-duration: 0.4s;
 }
 
-ul li a:hover {
-  background-color: red;
+ul.head li a:hover {
+  background-color: hsl(203, 61%, 50%);
   color: black;
-  
 }
 
-ul li a.active {
+ul.head li a.active {
   background-color: #222;
   color: white;
 }
@@ -65,22 +75,19 @@ p.large {
 }
 
 p.thick {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 p.italic {
-	font-style: italic;
+  font-style: italic;
 }
-
 
 div {
-//max-width: 200px;
+  //max-width: 200px;
   height: 50px;
-  border: 2px solid red;
+  /* border: 2px solid black; */
   margin: auto;
 }
-
-
 
 .button {
   background-color: white;
@@ -104,7 +111,7 @@ div {
 }
 
 .button-shadow:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-group .button {
@@ -128,8 +135,6 @@ div {
   cursor: default;
 }
 
-
-
 /*FONTS*/
 @font-face {
   font-family: exo;
@@ -142,3 +147,5 @@ font-face {
   src: url(fonts/Exo-VariableFont_wght.ttf);
   font-style: italic;
 }
+
+/* https://www.color-hex.com/color-palette/30415 (website for cool blue colors) */
