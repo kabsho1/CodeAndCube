@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,41 +10,81 @@
 }
 
 body {
-  background-color: #0d2636;
-  color: white;
+  background-color: #ffffff;
+  color: black;
+}
+
+header {
+
+}
+
+header.home {
+  /* background: black; */
+  background-image: url("../images/codeBackground.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px;
+}
+
+header p {
+  margin: 0 20%;
 }
 
 h1 {
+  text-align: center;
   margin: 10px;
   margin-left: 20px;
+  color: black;
   /*font-family: "Georgia", serif;*/
-  font-weight: lighter;
-  font-variation-settings: 'wght' 10;
-  font-size: 300%;
+  /* font-weight: lighter; */
+  /* font-variation-settings: 'wght' 10; */
+  font-size: 400%;
 }
 
 h2 {
-  font-weight: 300;
+  margin: 10px, 20px;
+  font-size: 250%;
+}
+
+h3 {
+  margin: 10px, 20px;
 }
 
 p {
-  margin: 10px;
+  /* margin: 10px; */
   /* color: white; */
+  font-size: 150%;
   /*text-align: center;*/
+
 }
 
 a {
-  color: white;
+  /* color: white; */
+}
+
+/* a.anchor {
+  position: relative;
+  top: -90px;
+  display: block;
+  visibility: hidden;
+} */
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:1;
 }
 
 ul.head {
   list-style-type: none;
   overflow: hidden;
-  background-color: hsl(203, 61%, 20%);
+  background-color: hsl(202, 33%, 65%);
   width: 100%;
-  position: -webkit-sticky;
+  /* position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0; */
   padding-left: 10%;
 }
 
@@ -51,7 +95,7 @@ ul.head li {
 ul.head li a {
   display: block;
   padding: 30px 20px;
-  color: white;
+  color: black;
   text-decoration: none;
   transition-duration: 0.4s;
 }
@@ -64,6 +108,19 @@ ul.head li a:hover {
 ul.head li a.active {
   background-color: #222;
   color: white;
+}
+
+ul.head li img.logo {
+  /* position: absolute; */
+  display: block;
+  padding: 10px 20px;
+  transition-duration: 0.4s;
+  width: 100px;
+}
+
+ul.head li img.logo:hover {
+  background-color: hsl(203, 61%, 50%);
+  cursor: pointer;
 }
 
 ol {
@@ -84,57 +141,126 @@ p.italic {
 
 div {
   /* max-width: 200px; */
-  height: 50px;
+  /* height: 50px; */
   /* border: 2px solid black; */
-  margin: auto;
+  /* margin: auto; */
+  /* border: 2px solid white; */
 }
 
-.button {
-  background-color: white;
-  color: black;
-  padding: 15px 32px;
+div.right {
+  margin: 0 0 0 50%;
+  /* border: 2px solid black; */
+}
+
+div.left {
+  margin: 0 50% 0 0;
+  /* border: 2px solid black; */
+}
+
+div.video-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1%;
+  align-items: center;
+}
+
+div.video-box {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: ltr;
+  justify-content: space-evenly;
+  margin: 1%;
+  width: 80%;
+  /* height: 300px; */
+  /* border: 2px solid red; */
+}
+
+div.player {
+  /* border: 2px solid white; */
+  display: block;
+  width: 60%;
+  float: left;
+  /* float: left; */
+  /* height:; set with js */
+}
+
+div.description {
+  /* border: 2px solid white; */
+  width: 40%;
+  /* text-align: left; */
+  /* display: block; */
+  float: left;
+  padding: 10px;
+}
+
+div.button-container {
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border: 2px solid black;
-  transition-duration: 0.4s;
+  margin-bottom: 40px;
 }
 
-.button:hover {
-  background-color: black;
-  color: white;
+section.content {
+  margin: 20px 15%;
 }
 
-.button-rounded {
+section.cube-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.video-set {
+  margin: 5% 0;
+  background: #bdbdbd;
+  padding: 20px 10px;
+  display: block;
   border-radius: 20px;
 }
 
-.button-shadow:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+section.video-set h3 {
+  /* text-align: center; */
+  font-size: 200%;
+  margin-left: 5%;
 }
 
-.btn-group .button {
-  background-color: black;
-  color: white;
-  border: none;
-  float: left;
-  cursor: pointer;
+section.content p {
+  margin: 10px;
 }
 
-.btn-group .button:hover {
-  background-color: red;
-  color: black;
-  border: none;
-  float: left;
+section.content ul {
+  margin: 20px 50px;
+}
+section.content ul li {
+  margin: 10px 0px;
 }
 
-.btn-group .button.active {
-  background-color: #F00;
-  color: white;
-  cursor: default;
+section.java-content {
+  background: #bdbdbd;
+  border-radius: 20px;
 }
 
+.totalHours {
+  text-align: center;
+}
+
+.video {
+  width:100%;
+  height:100%;
+}
+
+.calendar {
+  width:100%;
+  height:100%;
+}
+
+footer {
+  background-color: #bdbdbd;
+  padding: 50px;
+}
+
+footer * {
+  margin: 10px;
+}
 
 
 /*FONTS*/

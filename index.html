@@ -6,44 +6,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code and Cube Home Page</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="images/codeAndCubeLogo.png">
 </head>
 
 <body>
 
-  <ul class="head">
-    <li><a class="active" href="https://codeandcube.com/">Home</a></li>
-    <li><a href="test">Test Page</a></li>
-    <li><a href="videoTemplate">Music Videos</a></li>
-    <li><a href="games">Games</a></li>
-    <li><a href="volunteerWork">Volunteer Work</a></li>
-    <li><a href="blog">Blog</a></li>
-    <li><a href="calendar">Calendar</a></li>
-    <li style="float:right;"><a>a logo or something</a></li>
-  </ul>
-  <br><br><br><br><br><br>
-  <h1 style="text-align: center;">CODE AND CUBE</h1>
+  <nav>
+    <ul class="head">
+      <li><a class="active" href="https://codeandcube.com/">Home</a></li>
+      <li><a href="rubiks-cube-classes">Classes For Rubik's Cube</a></li>
+      <li><a href="java-classes">Classes For Java</a></li>
+      <li><a href="stem-help">STEM Help</a></li>
+      <!-- <li><a href="">Testimonials</a></li> -->
+      <li><a href="calendar">Calendar</a></li>
+      <li><a href="sign-up">Sign Up</a></li>
+      <li style="float:right;"><img class="logo" src="images/codeAndCubeLogo.png" onclick="goToHomePage()" alt="Logo"></li>
+    </ul>
+  </nav>
 
+  <header class="home">
+    <h1 style="color:white;">CODE AND CUBE</h1>
+  </header>
 
+  <section class="content">
+    <div class="left">
+      <h2>Goal</h2>
+      <p>Due to the coronavirus pandemic, schools have been closed down,
+        resulting in young students staying at home with a lot of unstructured time
+        on their hands; time is spent on playing video games and watching a lot of TV,
+        while their parents are glued to their screens trying to work from home.
+        To help in this situation, I plan to offer a few fun classes for younger kids.
+      </p>
+    </div>
+  </section>
 
+  <section class="content right">
+    <div class="right">
+      <h2>Impact</h2>
+      <p>30+ students</p>
+      <p>40+ hours taught</p>
+      <p>35+ classes</p>
+    </div>
+  </section>
 
-  <!-- <div class="btn-group">
-      <button class="button active" disabled>Home</button>
-      <button class="button" onclick="myFunction()">Test Page</button>
-      <button class="button">Button</button>
-      <button class="button">Button</button>
-      <button class="button" style="float:right;">a logo or something</button>
-    </div>-->
+  <section class="content">
+    <div class="left">
+      <h2>About Me</h2>
+      <p>
+        My name is Kabir Batra and I am a rising senior at Homestead High School.
+        Some of my favorite things to do are challenging myself to learn new things,
+        reading dystopian fiction books, and writing some code!
+        Besides my passion for Computer Science, Physics, and Math,
+        I also play the trumpet as part of the Marching Band and Jazz Ensemble,
+        and I conduct a Brass Ensemble.
+      </p>
+    </div>
+  </section>
 
-  <div style="height:700px;">
-  </div>
 
   <footer>
     <p>© 2020 Kab</p>
-    <p>Contact information: <a href="mailto:someone@example.com">
-        someone@example.com</a>.</p>
+    <p>Contact information: kabirbatraa at gmail dot com</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

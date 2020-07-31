@@ -1,0 +1,27 @@
+
+
+.button {
+  width:20%;
+  background-color: black;
+  color:white;
+  padding: 15px 32px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  outline: none;
+  border: none;
+}
+
+.button-rounded {
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: rgb(41, 108, 171);
+  /* color: black; */
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: rgba(105, 105, 105, 1);
+  transition-duration: 0.2s;
+}
