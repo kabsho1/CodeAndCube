@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rubik's Cube Classes</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/commonStyles.css" rel="stylesheet">
+  <link href="css/rubiksCube.css" rel="stylesheet">
   <link href="css/buttons.css" rel="stylesheet">
   <link rel="icon" href="images/codeAndCubeLogo.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,11 +16,11 @@
   <nav>
     <ul class="head">
       <li><a href="https://codeandcube.com/">Home</a></li>
-      <li><a class="active" href="rubiks-cube-classes">Classes For Rubik's Cube</a></li>
-      <li><a href="java-classes">Classes For Java</a></li>
+      <li><a class="active" href="rubiks-cube-classes">Rubik's Cube Classes</a></li>
+      <li><a href="java-classes">Java Classes</a></li>
       <li><a href="stem-help">STEM Help</a></li>
-      <!-- <li><a href="">Testimonials</a></li> -->
-      <li><a href="calendar">Calendar</a></li>
+      <li><a href="testimonials">Testimonials</a></li>
+      <!-- <li><a href="calendar">Calendar</a></li> -->
       <li><a href="sign-up">Sign Up</a></li>
       <li style="float:right;"><img class="logo" src="images/codeAndCubeLogo.png" onclick="goToHomePage()" alt="Logo"></li>
     </ul>
@@ -44,140 +44,137 @@
     </p>
   </header>
 
-  <section class="content cube">
+  <section class="content cube-content gray">
+    <h3>Getting Started</h3>
+    <div class="video-set">
 
-    <section class="video-set">
-      <h3>Getting Started</h3>
-      <div class="video-row">
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6bVSIq-33zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>Learning to solve the Rubik's Cube starts with Cube Theory Basics!</p>
-          </div>
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6bVSIq-33zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vttMqxPIKgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>Cubing Notation is very important to know in order to learn the rest of the steps quickly!</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="video-set">
-      <h3>Cross</h3>
-      <div class="video-row">
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/xdz9KEsI190" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>Building the Daisy formation is an easy and fun strategy to set you up for making the Cross!</p>
-          </div>
-        </div>
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/XBVAnCwSh4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>Building the Cross is the first step out of CFOP.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="video-set">
-      <h3>First Two Layers</h3>
-      <div class="video-row">
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/W54FI0_gE8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>After inserting the corners, you will have solved the white side!</p>
-          </div>
-        </div>
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Mzyj__fKnsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>Once you have solved the edges, you will have completed the First Two Layers of the Rubik's Cube!</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="video-set">
-      <h3>Orienting Last Layer</h3>
-      <div class="video-row">
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bzzdRlqpBhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>The Yellow Cross is very different from the White Cross since we have to make sure not to mess anything up!</p>
-          </div>
-        </div>
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/SjxWtX-_i9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>You can orient the corners of any possibility using just the Sune algorithm!</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="video-set">
-      <h3>Permuting Last Layer</h3>
-      <div class="video-row">
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/BqnoD5_6vLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>Although you only need to learn one algorithm for this step, it is the longest one of all!</p>
-          </div>
-        </div>
-
-        <div class="video-box">
-          <div class="player">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/cesXNCve380" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-            <p>Once you have solved the yellow edge pieces, you will have solved the cube!</p>
-          </div>
+        <div class="description">
+          <p>Learning to solve the Rubik's Cube starts with Cube Theory Basics!</p>
         </div>
       </div>
-    </section>
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vttMqxPIKgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>Cubing Notation is very important to know in order to learn the rest of the steps quickly!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="content cube-content gray">
+    <h3>Cross</h3>
+    <div class="video-set">
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/xdz9KEsI190" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>Building the Daisy formation is an easy and fun strategy to set you up for making the Cross!</p>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/XBVAnCwSh4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>Building the Cross is the first step out of CFOP.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="content cube-content gray">
+    <h3>First Two Layers</h3>
+    <div class="video-set">
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/W54FI0_gE8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>After inserting the corners, you will have solved the white side!</p>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Mzyj__fKnsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>Once you have solved the edges, you will have completed the First Two Layers of the Rubik's Cube!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="content cube-content gray">
+    <h3>Orienting Last Layer</h3>
+    <div class="video-set">
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bzzdRlqpBhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>The Yellow Cross is very different from the White Cross since we have to make sure not to mess anything up!</p>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/SjxWtX-_i9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>You can orient the corners of any possibility using just the Sune algorithm!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="content cube-content gray">
+    <h3>Permuting Last Layer</h3>
+    <div class="video-set">
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/BqnoD5_6vLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>Although you only need to learn one algorithm for this step, it is the longest one of all!</p>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <div class="player">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/cesXNCve380" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <p>Once you have solved the yellow edge pieces, you will have solved the cube!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div class="button-container">
     <button class="button button-rounded" onclick="goToSignUpPage()">Sign Up!</button>
   </div>
 
-  </section>
-
   <footer>
-    <p>© 2020 Kab</p>
+    <p>© 2020 Kabir Batra</p>
     <p>Contact information: kabirbatraa at gmail dot com</p>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/videos.js"></script>
 </body>

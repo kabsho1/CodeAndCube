@@ -1,0 +1,14 @@
+
+
+section.testimonial-content {
+  /* border-radius: 20px;
+  padding: 20px 10px; */
+  margin: 0;
+  border-radius: 0px;
+  /* background: #FFFFFF; */
+  /* border: 2px solid green; */
+}
+
+p.name {
+  text-align: center;
+}
