@@ -197,6 +197,26 @@ section.gray {
   background: #cdcdcd;
 }
 
+section.pink {
+  background: rgb(245, 157, 217);
+}
+
+section.sky-blue {
+  background: rgb(161, 231, 240);
+}
+
+section.lime {
+  background: rgb(172, 235, 194);
+}
+
+section.orange {
+  background: rgb(249, 184, 174);
+}
+
+section.dark-gray {
+  background: rgb(119, 119, 119);
+}
+
 /*
 .totalHours {
   text-align: center;
@@ -214,6 +234,10 @@ footer {
 
 footer * {
   margin: 10px;
+}
+
+.white-section * {
+  color: white;
 }
 
 
