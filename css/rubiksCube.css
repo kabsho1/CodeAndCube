@@ -10,7 +10,7 @@ div.video-set {
 div.video-box {
   display: flex;
   /* align-items: center; */
-  flex-direction: ltr;
+  flex-direction: column;
   justify-content: space-evenly;
   margin: 1%;
   width: 80%;
@@ -21,7 +21,7 @@ div.video-box {
 div.player {
   /* border: 2px solid white; */
   display: block;
-  width: 60%;
+  width: 100%;
   float: left;
   /* float: left; */
   /* height:; set with js */
@@ -29,7 +29,7 @@ div.player {
 
 div.description {
   /* border: 2px solid white; */
-  width: 40%;
+  width: 100%;
   /* text-align: left; */
   /* display: block; */
   float: left;
