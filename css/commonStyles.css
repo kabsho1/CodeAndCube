@@ -263,6 +263,9 @@ footer {
   background-color: hsl(190, 84%, 44%);
   padding: 50px;
 }
+footer p {
+  text-align: left;
+}
 
 footer * {
   margin: 10px;
@@ -393,8 +396,10 @@ font-face {
   ul.nav-links li a {
     color: white;
     font-size: 30px;
+    user-select: none;
   }
-  ul.nav-links li.active {
+  ul.nav-links li.active,
+  ul.nav-links li.active:hover {
     background-color: #222;
   }
   ul.nav-links li.active a {
@@ -410,6 +415,9 @@ font-face {
   p, ul {
     font-size: 100%;
   }
+  /* p {
+    text-align: left;
+  } */
   h1 {
     font-size: 175%;
   }
