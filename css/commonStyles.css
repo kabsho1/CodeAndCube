@@ -292,6 +292,7 @@ font-face {
 @media screen and (max-width: 600px) {
 
   nav {
+    height: 9vh;
     /* position: relative; */
     /* position: sticky; */
     /* border: 2px solid yellow; */
@@ -301,8 +302,8 @@ font-face {
   .hamburger {
     position: absolute;
     cursor: pointer;
-    right: 2%;
-    /* right: 0; */
+    /* right: 2%; */
+    right: 0;
     top: 50%;
     transform: translate(-5%, -50%);
     z-index: 2;
