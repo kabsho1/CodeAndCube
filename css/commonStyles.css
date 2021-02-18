@@ -30,7 +30,7 @@ h1 {
   /*font-family: "Georgia", serif;*/
   /* font-weight: lighter; */
   /* font-variation-settings: 'wght' 10; */
-  font-size: 400%;
+  font-size: 300%;
 }
 
 h2 {
@@ -42,44 +42,66 @@ h3 {
   margin: 10px, 20px;
 }
 
-p {
-  /* margin: 10px; */
-  /* color: white; */
-  font-size: 150%;
-  /*text-align: center;*/
-
-}
-
-a {
-  /* color: white; */
-}
-
-/* a.anchor {
-  position: relative;
-  top: -90px;
-  display: block;
-  visibility: hidden;
-} */
-
 nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index:1;
+  height: 12vh;
+  background: hsl(190, 84%, 44%);
+  overflow: hidden
 }
 
-ul {
-  font-size: 150%;
+ul, p {
+  font-size: 130%;
 }
 
-ul.head {
+ul.nav-links {
+  display: flex;
+  list-style: none;
+  /* width: 50%; */
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul.nav-links li {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  /* background: coral; */
+  /* border: 3px solid green; */
+  position: relative;
+  transition: all 0.4s ease 0s;
+}
+ul.nav-links li:hover {
+  background-color: hsl(190, 83%, 37%);
+  cursor: pointer;
+}
+
+ul.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  /* border: 3px solid blue; */
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+ul.nav-links li.active {
+  background-color: #222;
+}
+ul.nav-links li.active a {
+  color: white;
+}
+
+/* ul.head {
   list-style-type: none;
   overflow: hidden;
   background-color: hsl(190, 84%, 44%);
   width: 100%;
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0; */
+
   padding-left: 10%;
   font-size: 100%;
 }
@@ -107,7 +129,6 @@ ul.head li a.active {
 }
 
 ul.head li img.logo {
-  /* position: absolute; */
   display: block;
   padding: 10px 20px;
   transition-duration: 0.4s;
@@ -117,7 +138,7 @@ ul.head li img.logo {
 ul.head li img.logo:hover {
   background-color: hsl(203, 61%, 50%);
   cursor: pointer;
-}
+} */
 
 ol {
   margin-left: 30px;
@@ -164,6 +185,17 @@ div.mid {
 div.button-container {
   text-align: center;
   margin-bottom: 40px;
+}
+
+div.form {
+  height: 100vh;
+  width: auto;
+}
+
+div.form iframe {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 section.content {
@@ -254,5 +286,134 @@ font-face {
   src: url(../fonts/Exo-VariableFont_wght.ttf);
   font-style: italic;
 }
+
+
+
+@media screen and (max-width: 600px) {
+
+  nav {
+    /* position: relative; */
+    /* position: sticky; */
+    /* border: 2px solid yellow; */
+
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    /* right: 0; */
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    /* border: 3px solid green; */
+    transition: all .5s ease-in-out;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(117, 117, 117, 0.48);
+    transition: all .5s ease-in-out;
+    /* margin: 5px; */
+  }
+  .line::before, .line::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(117, 117, 117, 0.48);
+    transition: all .5s ease-in-out;
+  }
+
+  .line::before {
+    transform: translateY(-8px);
+  }
+  .line::after {
+    transform: translateY(8px);
+  }
+
+  .hamburger.open .line {
+    transform: translateX(100px);
+    /* background: transparent; */
+    box-shadow: none;
+  }
+
+  .hamburger.open .line::before {
+    /* transform: rotate(45deg) translate(20px, 30px); */
+    transform: translateX(-100px) rotate(-45deg);
+  }
+  .hamburger.open .line::after {
+    /* transform: rotate(45deg) translate(20px, 30px); */
+    transform: translateX(-100px) rotate(45deg);
+  }
+
+
+  ul.nav-links {
+    position: fixed;
+    background: hsl(190, 84%, 44%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin-left: 0;
+    flex-direction: column;
+    /* display: none; */
+    clip-path: circle(1px at 100% -10%);
+    -webkit-clip-path: circle(1px at 100% -10%);
+    transition: all 2s ease-out;
+  }
+
+  ul.nav-links li {
+    opacity: 0;
+    /* transition:  */
+  }
+  ul.nav-links li:hover {
+    background: hsl(190, 84%, 44%);
+  }
+  ul.nav-links li:nth-child(2n),
+  ul.nav-links li:hover:nth-child(2n) {
+    background: hsl(190, 83%, 37%);
+  }
+
+  ul.nav-links li.fade-in {
+    opacity: 1;
+  }
+
+  ul.nav-links li a {
+    color: white;
+    font-size: 30px;
+  }
+  ul.nav-links li.active {
+    background-color: #222;
+  }
+  ul.nav-links li.active a {
+    color: white;
+  }
+
+  ul.nav-links.open {
+    clip-path: circle(1100px at 100% -10%);
+    -webkit-clip-path: circle(1100px at 100% -10%);
+    transition: all 1s ease-out;
+  }
+
+  p, ul {
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 175%;
+  }
+}
+
+
 
 /* https://www.color-hex.com/color-palette/30415 (website for cool blue colors) */

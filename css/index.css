@@ -1,17 +1,24 @@
 header.home {
-  /* background: black; */
   background-image: url("../images/codeBackground.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 100px 10px;
+  padding: 20vh 10px;
+  background-position: center;
+
 }
 
 section.home-content {
-  /* border-radius: 20px;
-  padding: 20px 10px; */
   margin: 0;
   border-radius: 0px;
-  /* background: #FFFFFF; */
-  /* border: 2px solid green; */
+}
+
+
+@media screen and (max-width: 600px) {
+  header.home {
+    padding: 20vh 5px;
+  }
+  header.home h1 {
+    font-size: 300%;
+  }
 }

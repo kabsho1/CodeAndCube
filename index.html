@@ -13,16 +13,30 @@
 
 <body>
 
-  <nav>
+  <!-- <nav>
     <ul class="head">
       <li><a class="active" href="https://codeandcube.com/">Home</a></li>
       <li><a href="rubiks-cube-classes">Rubik's Cube Classes</a></li>
       <li><a href="java-classes">Java Classes</a></li>
       <li><a href="stem-help">STEM Help</a></li>
       <li><a href="testimonials">Testimonials</a></li>
-      <!-- <li><a href="calendar">Calendar</a></li> -->
+      <li><a href="calendar">Calendar</a></li>
       <li><a href="sign-up">Sign Up</a></li>
       <li style="float:right;"><img class="logo" src="images/codeAndCubeLogo.png" onclick="goToHomePage()" alt="Logo"></li>
+    </ul>
+  </nav> -->
+
+  <nav>
+    <div class="hamburger">
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links">
+      <li class="active" onclick="location.href = 'https://codeandcube.com/';"><a>Home</a></li>
+      <li onclick="location.href = 'rubiks-cube-classes';"><a>Rubik's Cube Classes</a></li>
+      <li onclick="location.href = 'java-classes';"><a>Java Classes</a></li>
+      <li onclick="location.href = 'stem-help';"><a>STEM Help</a></li>
+      <li onclick="location.href = 'testimonials';"><a>Testimonials</a></li>
+      <li onclick="location.href = 'sign-up';"><a>Sign Up</a></li>
     </ul>
   </nav>
 
